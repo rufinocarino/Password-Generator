@@ -1,0 +1,136 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --clr-primary: #273549;
+    --clr-secondary: #10B981;
+    --clr-third: #2F3E53;
+    --clr-fourth: #ffffff;  
+    --clr-fifth: #ECFDF5;
+}
+
+.container {
+    background-color: var(--clr-primary);
+    text-align: center;
+    height: 550px;
+    width: 550px;
+    text-align: center;
+    
+}
+
+.title { 
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: justify;
+}
+
+h1 {
+    line-height: 45px;
+}
+.title__white{
+    display: block;
+    color: var(--clr-fourth);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.title__green {
+    color: var(--clr-secondary);
+    font-size: 45px;
+}
+
+.title__gray {
+    color: var(--clr-fifth);
+    opacity: 80%;
+    font-size: 20px;
+}
+
+#btn {
+    margin-left: auto;
+    margin: 3em 0em;
+    padding: .75em .5em;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--clr-secondary);
+    color: var(--clr-fourth);
+    cursor: pointer;
+}
+
+button:hover{ 
+    background-color: #7c3aed;
+}
+
+.hl {
+    border: 1px solid var(--clr-fifth);
+}
+
+.newpassword {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 80px;
+    /* position: relative; */
+}
+
+.square {
+    height: 40px;
+    width: 170px;
+    background-color: var(--clr-third);
+    color: var(--clr-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#copy-pass {
+    position: absolute;
+    left: 197px;
+    width: 4em;
+    bottom: 164px;
+    height: 25px;
+    
+}
+
+.btn{
+    border-radius: 5px;
+    border: none;
+    background-color: var(--clr-secondary);
+    color: var(--clr-fourth);
+    cursor: pointer;
+}
+
+#copy-passTwo {
+    position: absolute;
+    right: 80px;
+    width: 4em;
+    bottom: 164px;
+    height: 25px;
+    
+}
+
+@media (min-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+    
+    .title {
+        margin-left: 400px;
+        
+    }
+
+    .hl {
+        width: 50em;
+    }
+
+    .newpassword {
+        margin: auto;
+        position: relative;
+        right: 150px;
+        top: 50px;
+        width: 600px;
+    }
+}
